@@ -39,7 +39,7 @@
     <img class="logo" src="" alt="Логотип сайта о Седоне">
   </section>
    <section class="about">
-    <h2>СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
+    <h2 class="about-title">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
 ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
    </section>
@@ -65,8 +65,7 @@
          </li>
          <li class="advantages-blue icon-present">
           <h3 class="advantages-title">СУВЕНИРЫ</h3>
-          <p class="advantages-description">Не только китайского,
-но и настоящего местного производства!</p>
+          <p class="advantages-description">Не только китайского,но и настоящего местного производства!</p>
          </li>
         </ul>
     </div>
@@ -96,13 +95,13 @@
 	 </ul>
     </div>
    </section>
-   <section class="search" >
-     <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+   <section class="search">
+     <h2 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	<a class="button button-brown" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
    </section>
    <section class="subscription background-image">
-      <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+      <h2 class="subscription-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
     <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
       <input class="field" type="email" name="subscription-email" id="subscription-email" placeholder="Ваш e-mail" required>
@@ -111,7 +110,7 @@
    </section>
 </main>
 <footer class="footer">
-   <section class="footer-social" >
+   <section class="footer-social">
      <h2 class="visually-hidden">Социальные сети</h2>
 	 <ul class="footer-social-list">
 	  <li class="footer-social-item">
@@ -131,9 +130,9 @@
       </li>
      </ul>
    </section>
-   <section class="footer-telephone" >
+   <section class="footer-telephone">
      <h2 class="visually-hidden">Телефон</h2>
-     <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+     <a class="footer-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
    </section>
    <section class="footer-logo" >
      <h2 class="visually-hidden">Логотип разработчиков</h2>
@@ -141,32 +140,24 @@
    </section>
 </footer>
 </div>
-  </body>
-</html>
-
-
-
-
-
-ФОРМА
+<!---ФОРМА--->
 <div class="placeholder">
-<div>
-  <form action="#" method="post">
-    <div>
-   <h2>Поиск гостиницы в Седоне</h2> 
+  <form class="hotel-search" action="#" method="post">
+    <div class="form-header">
+   <h2 class="hotel-search-title">Поиск гостиницы в Седоне</h2> 
    <button type="submit" class="button closing"><img src="" alt="cross in a circle"></button>
    </div>
-   <label>Дата заезда:<input type="date" placeholder="27 апреля 2020" required></label>
-   <span>Мы не можем отправить вас в прошлое.</span>
-   <label>Дата выезда:<input type="date" placeholder="1 сентября 2021" required></label>
-   <span>На эти даты есть свободные номера. Пока есть.</span>
-   <label>Взрослые:
+   <label class="form-field">Дата заезда:<input type="date" placeholder="27 апреля 2020" required></label>
+   <span class="comment">Мы не можем отправить вас в прошлое.</span>
+   <label class="form-field">Дата выезда:<input type="date" placeholder="1 сентября 2021" required></label>
+   <span class="comment">На эти даты есть свободные номера. Пока есть.</span>
+   <label class="form-field">Взрослые:
      <button type="submit" class="button minus">-</button>
      <input type="number" placeholder="2" required>
      <button type="submit" class="button plus">+</button>
    </label>
-   <label>Дети:
-    <div>
+   <label class="form-field">Дети:
+    <div class="information">
     <button type="submit" class="button info"><img src="" alt="information"></button>
     <span class="block-of-information">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span> 
     </div>
@@ -174,8 +165,8 @@
      <input type="number" placeholder="1">
      <button type="submit" class="button plus">+</button>
    </label>
-   
    <button type="submit" class="button button-blue find">Найти</button>
   </form>
 </div>
-</div>
+  </body>
+</html>
